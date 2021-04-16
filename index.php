@@ -3,18 +3,22 @@
   //Default language: english
   if(isset($_GET["lang"])){
     if(file_exists("lang/".$_GET["lang"].".php")){
-      include "lang/".$_GET["lang"].".php";
+      require_once "lang/".$_GET["lang"].".php";
     }
     else{
-      include "lang/en.php";
+      require_once "lang/en.php";
     }
   }
   else{
-    include "lang/en.php";
+    //Check browser language
+    $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    $acceptLang = ['de', 'en']; 
+    $lang = in_array($lang, $acceptLang) ? $lang : 'en';
+    require_once "lang/" . $lang . ".php"; 
   }
 ?>
 
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
