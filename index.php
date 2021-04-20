@@ -207,15 +207,15 @@
         </h6>
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/ADarkHero">
-            <i class="far fa-file-code"></i>
-              <?php echo $git; ?>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://www.heldendenken.de">
             <i class="far fa-file-archive"></i>
               <?php echo $blog; ?>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/ADarkHero">
+            <i class="far fa-file-code"></i>
+              <?php echo $git; ?>
             </a>
           </li>
         </ul>

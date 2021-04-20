@@ -22,7 +22,7 @@
     $eng_write = "English speaking/writing (B1)";
     $license = "<b>NO</b> drivers license";
     $git = "Source codes / code projects";
-    $blog = "Media procects / newsletter";
+    $blog = "Media projects / newsletter";
 
     //Skills
     $exp = "Experience";

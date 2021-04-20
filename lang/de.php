@@ -14,7 +14,7 @@
     $ref = "Referenzen";
     $basic_sch = "Volksschule";
     $sec_sch = "Hauptschule";
-    $htl_sch = "Computerfachschule";
+    $htl_sch = "HTL-Computerfachschule";
     $it_sch = "It-Kolleg";
     $move = "Umzug nach DE";
     $mother = "Muttersprache: Deutsch";
