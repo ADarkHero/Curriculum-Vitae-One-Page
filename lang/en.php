@@ -18,7 +18,7 @@
     $it_sch = "It college";
     $move = "Moved to DE";
     $mother = "Mothers tongue: German";
-    $eng_hear = "English hearing/listening (B2)";
+    $eng_hear = "English hearing/reading (B2)";
     $eng_write = "English speaking/writing (B1)";
     $license = "<b>NO</b> drivers license";
     $git = "Source codes / code projects";
