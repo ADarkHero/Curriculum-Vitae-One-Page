@@ -92,7 +92,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="tel:01745602838">
-            <i class="fas fa-phone"></i>
+            <i class="fas fa-mobile"></i>
               +49 (0)174 56 02 838
             </a>
           </li>

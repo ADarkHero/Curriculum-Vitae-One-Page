@@ -65,3 +65,12 @@ body{
   width: 1.5em;
   text-align: center;
 }
+
+
+.footer{
+  height: 5em;
+  background-image: url(../img/photo.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 5em;
+}
