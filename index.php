@@ -38,13 +38,16 @@
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
 <a class="navbar-brand col-md-10 col-lg-10 me-0 px-3" href="#">Maik Riedlsperger - <?php echo $cv; ?></a>
 <a class="navbar-brand col-md-2 col-lg-2 me-0 px-3 text-right" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
-  EN &nbsp; <span data-feather="toggle-<?php if($currentlanguage == "en"){ echo "left"; } else { echo "right"; } ?>"></span> &nbsp; DE
+  EN <i class="fas fa-toggle-<?php if($currentlanguage == "en"){ echo "off"; } else { echo "on"; } ?>"></i> DE
 </a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <?php echo $contact_info; ?>&nbsp;
@@ -62,25 +65,25 @@
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link active" href="mailto:maik.riedlsperger@gmail.com">
-              <span data-feather="mail"></span>
+              <i class="far fa-envelope"></i>
               maik.riedlsperger@gmail.com
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://www.adarkhero.de">
-              <span data-feather="home"></span>
+              <i class="fas fa-globe-europe"></i>
               https://www.adarkhero.de
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://www.google.com/maps/place/Allee+15,+27254+Siedenburg/@52.6981892,8.9470263,17z/data=!3m1!4b1!4m5!3m4!1s0x47b095506d397c87:0x8840176f02136d06!8m2!3d52.6981892!4d8.9492203">
-              <span data-feather="map-pin"></span>
+              <i class="fas fa-home"></i>
               Allee 15, 27254 Siedenburg
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="tel:01745602838">
-              <span data-feather="phone"></span>
+            <i class="fas fa-phone"></i>
               +49 (0)174 56 02 838
             </a>
           </li>
@@ -92,13 +95,13 @@
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="star"></span>
+            <i class="far fa-star"></i>
               16.03.1995 @ Mittersill, AT
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="move"></span>
+            <i class="fas fa-expand-arrows-alt"></i>
               01.01.2017 <?php echo $move; ?>
             </a>
           </li>
@@ -110,25 +113,25 @@
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="toggle-left"></span>
+              <i class="fas fa-toggle-off"></i>
               <?php echo $basic_sch; ?> @ Hinterglemm, AT
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="toggle-left"></span>
+              <i class="fas fa-toggle-off"></i>
               <?php echo $sec_sch; ?> @ Maishofen, AT
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="toggle-left"></span>
+              <i class="fas fa-toggle-off"></i>
               <?php echo $htl_sch; ?> @ Saalfelden, AT
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="toggle-left"></span>
+              <i class="fas fa-toggle-off"></i>
               <?php echo $it_sch; ?> @ Imst, AT
             </a>
           </li>
@@ -140,19 +143,19 @@
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="volume-2"></span>
+            <i class="fas fa-volume-up"></i>
               <?php echo $mother; ?>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="volume-1"></span>
+            <i class="fas fa-volume-down"></i>
               <?php echo $eng_hear; ?>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="volume-1"></span>
+            <i class="fas fa-volume-down"></i>
               <?php echo $eng_write; ?>
             </a>
           </li>
@@ -164,7 +167,7 @@
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="key"></span>
+            <i class="fas fa-car-side"></i>
               <?php echo $license; ?>
             </a>
           </li>
@@ -176,13 +179,13 @@
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://github.com/ADarkHero">
-              <span data-feather="github"></span>
+            <i class="fas fa-user"></i>
               <?php echo $git; ?>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://www.heldendenken.de">
-              <span data-feather="activity"></span>
+            <i class="far fa-file-archive"></i>
               <?php echo $blog; ?>
             </a>
           </li>
@@ -203,7 +206,7 @@
           </thead>
           <tbody>
             <tr>
-              <td><span data-feather="code"></span></td>
+              <td><i class="fas fa-code"></i></td>
               <td><b><?php echo $prog; ?></b><br>=> <?php echo $prog_info; ?></td>
               <td>
                 <div class="progress">
@@ -215,7 +218,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="image"></span></td>
+              <td><i class="fas fa-photo-video"></i></td>
               <td><b><?php echo $pic; ?></b><br>=> <?php echo $pic_info; ?></td>
               <td>
                 <div class="progress">
@@ -227,7 +230,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="shopping-cart"></span></td>
+              <td><i class="fas fa-store"></i></td>
               <td><b><?php echo $online; ?></b><br>=> <?php echo $online_info; ?></td>
               <td>
                 <div class="progress">
@@ -239,7 +242,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="file-text"></span></td>
+              <td><i class="far fa-newspaper"></i></td>
               <td><b><?php echo $text; ?></b><br>=> <?php echo $text_info; ?></td>
               <td>
                 <div class="progress">
@@ -269,7 +272,7 @@
           </thead>
           <tbody>
             <tr>
-              <td><span data-feather="toggle-left"></span></td>
+              <td><i class="fas fa-toggle-off"></i></td>
               <td>07-2011<br>09-2011</td>
               <td><b><?php echo $seebacher; ?></b><br>@ Seebacher Group, Saalfelden AT</td>
               <td>
@@ -282,7 +285,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="toggle-left"></span></td>
+              <td><i class="fas fa-toggle-off"></i></td>
               <td>07-2012<br>08-2012</td>
               <td><b><?php echo $seebacher; ?></b><br>@ Seebacher Group, Saalfelden AT</td>
               <td>
@@ -295,7 +298,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="toggle-left"></span></td>
+              <td><i class="fas fa-toggle-off"></i></td>
               <td>08-2015<br>04-2016</td>
               <td><b><?php echo $heidi; ?></b><br>@ Heidis Landhaus, Hinterglemm AT</td>
               <td>
@@ -308,7 +311,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="toggle-left"></span></td>
+              <td><i class="fas fa-toggle-off"></i></td>
               <td>05-2016<br>01-2017</td>
               <td><b><?php echo $klinik; ?></b><br>@ Tauernklinikum, Zell am See AT</td>
               <td>
@@ -321,7 +324,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="toggle-right"></span></td>
+              <td><i class="fas fa-toggle-on"></i></td>
               <td>07-2017<br>??-????</td>
               <td><b><?php echo $loechel; ?></b><br>@ Löchel Industriebedarf, Sulingen DE</td>
               <td>
@@ -334,7 +337,7 @@
               </td>
             </tr>
             <tr>
-              <td><span data-feather="help-circle"></span></td>
+              <td><i class="far fa-question-circle"></i></td>
               <td>??-????<br>??-????</td>
               <td><b><?php echo $future; ?></b><br>@ <?php echo $future_info; ?></td>
             </tr>
@@ -344,7 +347,7 @@
         <footer class="footer mt-auto py-3 bg-light">
           <div class="container">
             <span class="text-muted">
-              Made with ❤ (and Bootstrap & Feathericons) by <a target="_blank" href="https://www.adarkhero.de">Maik Riedlsperger</a><br>
+              Made with ❤ (and Bootstrap & Font Awesome) by <a target="_blank" href="https://www.adarkhero.de">Maik Riedlsperger</a><br>
               Background image by <a target="_blank" href="https://pixabay.com/de/illustrations/ananas-wassermelone-obst-kalk-2201631/">mitosue</a>
             </span>
           </div>
@@ -354,7 +357,6 @@
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
     <script>(function () { feather.replace() })()</script>
   </body>
 </html>

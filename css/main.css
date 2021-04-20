@@ -1,35 +1,55 @@
+body{
+  font-family: var(--bs-font-monospace);
+}
+
+
+
+
+
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
+}
+
+
 
 .navbar{
     justify-content: revert;
 }
 
+
+
 .text-right {
     text-align: right!important;
 }
+
+
 
 .blockquote-footer{
     margin-top: 0rem;
     margin-bottom: -1rem;
 }
 
+
+
 .margin-top-revert{
     margin-top: revert;
 }
 
+
+
 .sidebar{
+    position: absolute;
     top: 0rem;
     background-image: url(../img/background.jpg);
 }
@@ -38,4 +58,10 @@
     position: relative!important;
     padding: unset;
   }
+}
+
+
+.fa, .fas, .far {
+  width: 1.5em;
+  text-align: center;
 }
