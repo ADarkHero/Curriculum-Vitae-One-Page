@@ -208,7 +208,7 @@
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://github.com/ADarkHero">
-            <i class="fas fa-user"></i>
+            <i class="far fa-file-code"></i>
               <?php echo $git; ?>
             </a>
           </li>
