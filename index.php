@@ -44,6 +44,10 @@
   </head>
   <body>
     
+
+<!-- Header -->
+
+
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
 <a class="navbar-brand col-md-10 col-lg-10 me-0 px-3" href="#">Maik Riedlsperger - <?php echo $cv; ?></a>
 <a class="navbar-brand col-md-2 col-lg-2 me-0 px-3 text-right" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
@@ -54,6 +58,11 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 </header>
+
+
+<!-- Sidebar -->
+<!-- Sidebar: Contact -->
+
 
 <div class="container-fluid">
   <div class="row">
@@ -89,6 +98,10 @@
           </li>
         </ul>
 
+
+<!-- Sidebar: Profile -->
+
+
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
           <span><?php echo $profile; ?></span>
         </h6>
@@ -106,6 +119,10 @@
             </a>
           </li>
         </ul>
+
+
+<!-- Sidebar: School -->
+
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
           <span><?php echo $school; ?></span>
@@ -137,6 +154,10 @@
           </li>
         </ul>
 
+
+<!-- Sidebar: Languages -->
+
+
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
           <span><?php echo $languages; ?></span>
         </h6>
@@ -161,6 +182,10 @@
           </li>
         </ul>
 
+
+<!-- Sidebar: Other -->
+
+
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
           <span><?php echo $other; ?></span>
         </h6>
@@ -172,6 +197,10 @@
             </a>
           </li>
         </ul>
+
+
+<!-- Sidebar: References -->
+
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
           <span><?php echo $ref; ?></span>
@@ -192,6 +221,10 @@
         </ul>
       </div>
     </nav>
+
+
+<!-- Skills -->
+
 
     <main class="col-md-8 ms-sm-auto col-lg-9 px-md-4">
       <h2 class="margin-top-revert">Skills</h2>
@@ -234,10 +267,10 @@
               <td><b><?php echo $online; ?></b><br>=> <?php echo $online_info; ?></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer">3 <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer">4 <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -246,10 +279,10 @@
               <td><b><?php echo $text; ?></b><br>=> <?php echo $text_info; ?></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer">2 <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer">3 <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -257,6 +290,10 @@
         </table>
       </div>
     </main>
+
+
+<!-- Experience -->
+
 
     <main class="col-md-8 ms-sm-auto col-lg-9 px-md-4">
       <h2><?php echo $w_exp; ?></h2>
@@ -344,6 +381,10 @@
           </tbody>
         </table>
 
+
+<!-- Footer -->
+
+
         <footer class="footer mt-auto py-3 bg-light">
           <div class="container">
             <span class="text-muted">
@@ -356,7 +397,9 @@
 </div>
 
 
+<!-- JS -->
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>(function () { feather.replace() })()</script>
   </body>
 </html>
