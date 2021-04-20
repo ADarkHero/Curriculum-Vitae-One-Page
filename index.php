@@ -243,10 +243,10 @@
               <td><b><?php echo $prog; ?></b><br>=> <?php echo $prog_info; ?></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-success" role="progressbar" style="width: 100%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer">10+ <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2009-08-01"); ?>+ <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -255,10 +255,10 @@
               <td><b><?php echo $pic; ?></b><br>=> <?php echo $pic_info; ?></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-success" role="progressbar" style="width: 50%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer">5 <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2016-01-01"); ?>+ <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -267,10 +267,10 @@
               <td><b><?php echo $online; ?></b><br>=> <?php echo $online_info; ?></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-success" role="progressbar" style="width: <?php echo calcYears("2017-07-01")*10; ?>%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer">4 <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2017-07-01"); ?>+ <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -279,10 +279,10 @@
               <td><b><?php echo $text; ?></b><br>=> <?php echo $text_info; ?></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-success" role="progressbar" style="width: <?php echo calcYears("2017-07-01")*10; ?>%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer">3 <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2017-12-01"); ?>+ <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -314,7 +314,7 @@
               <td><b><?php echo $seebacher; ?></b><br>@ Seebacher Group, Saalfelden AT</td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 10%;"></div>
                 </div>
                 <blockquote class="text-right">
                   <footer class="blockquote-footer">< 1 <?php echo $year; ?></footer>
@@ -327,7 +327,7 @@
               <td><b><?php echo $seebacher; ?></b><br>@ Seebacher Group, Saalfelden AT</td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 10%;"></div>
                 </div>
                 <blockquote class="text-right">
                   <footer class="blockquote-footer">< 1 <?php echo $year; ?></footer>
@@ -340,7 +340,7 @@
               <td><b><?php echo $heidi; ?></b><br>@ Heidis Landhaus, Hinterglemm AT</td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 10%;"></div>
                 </div>
                 <blockquote class="text-right">
                   <footer class="blockquote-footer">< 1 <?php echo $year; ?></footer>
@@ -353,7 +353,7 @@
               <td><b><?php echo $klinik; ?></b><br>@ Tauernklinikum, Zell am See AT</td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 10%;"></div>
                 </div>
                 <blockquote class="text-right">
                   <footer class="blockquote-footer">< 1 <?php echo $year; ?></footer>
@@ -366,10 +366,10 @@
               <td><b><?php echo $loechel; ?></b><br>@ Löchel Industriebedarf, Sulingen DE</td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar-striped bg-success" role="progressbar" style="width: <?php echo calcYears("2017-07-01")*10; ?>%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer">4+ <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2017-07-01"); ?>+ <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -403,3 +403,11 @@
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
+<?php
+  function calcYears($date){
+    $new_date = new DateTime($date);
+    $today = new DateTime();
+    $interval = $today->diff($new_date);
+    return $interval->format('%y');
+  }
