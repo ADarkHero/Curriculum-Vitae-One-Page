@@ -129,25 +129,25 @@
         </h6>
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" target="_blank" href="https://www.vs-wiesern.salzburg.at/">
               <i class="fas fa-toggle-off"></i>
               <?php echo $basic_sch; ?> @ Hinterglemm, AT
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" target="_blank" href="https://www.ms-maishofen.salzburg.at/">
               <i class="fas fa-toggle-off"></i>
               <?php echo $sec_sch; ?> @ Maishofen, AT
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" target="_blank" href="http://www.htlsaalfelden.at/">
               <i class="fas fa-toggle-off"></i>
               <?php echo $htl_sch; ?> @ Saalfelden, AT
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" target="_blank" href="https://www.it-kolleg-imst.at/de/home/">
               <i class="fas fa-toggle-off"></i>
               <?php echo $it_sch; ?> @ Imst, AT
             </a>
@@ -246,7 +246,7 @@
                   <div class="progress-bar-striped bg-success" role="progressbar" style="width: 100%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer"><?php echo calcYears("2009-08-01"); ?>+ <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2009-08-01"); ?> <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -255,10 +255,10 @@
               <td><b><?php echo $pic; ?></b><br>=> <?php echo $pic_info; ?></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar-striped bg-success" role="progressbar" style="width: 50%;"></div>
+                  <div class="progress-bar-striped bg-success" role="progressbar" style="width: <?php echo calcYears("2016-01-01")*10; ?>%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer"><?php echo calcYears("2016-01-01"); ?>+ <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2016-01-01"); ?> <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -270,7 +270,7 @@
                   <div class="progress-bar-striped bg-success" role="progressbar" style="width: <?php echo calcYears("2017-07-01")*10; ?>%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer"><?php echo calcYears("2017-07-01"); ?>+ <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2017-07-01"); ?> <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -282,7 +282,7 @@
                   <div class="progress-bar-striped bg-success" role="progressbar" style="width: <?php echo calcYears("2017-07-01")*10; ?>%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer"><?php echo calcYears("2017-12-01"); ?>+ <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2017-12-01"); ?> <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -311,10 +311,10 @@
             <tr>
               <td><i class="fas fa-toggle-off"></i></td>
               <td>07-2011<br>09-2011</td>
-              <td><b><?php echo $seebacher; ?></b><br>@ Seebacher Group, Saalfelden AT</td>
+              <td><b><?php echo $seebacher; ?></b><br>@ <a target="_blank" href="http://www.seebacher-group.at/">Seebacher Group, Saalfelden AT</a></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 10%;"></div>
+                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 5%;"></div>
                 </div>
                 <blockquote class="text-right">
                   <footer class="blockquote-footer">< 1 <?php echo $year; ?></footer>
@@ -324,10 +324,10 @@
             <tr>
               <td><i class="fas fa-toggle-off"></i></td>
               <td>07-2012<br>08-2012</td>
-              <td><b><?php echo $seebacher; ?></b><br>@ Seebacher Group, Saalfelden AT</td>
+              <td><b><?php echo $seebacher; ?></b><br>@ <a target="_blank" href="http://www.seebacher-group.at/">Seebacher Group, Saalfelden AT</a></td>
               <td>
                 <div class="progress">
-                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 10%;"></div>
+                  <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 5%;"></div>
                 </div>
                 <blockquote class="text-right">
                   <footer class="blockquote-footer">< 1 <?php echo $year; ?></footer>
@@ -350,7 +350,7 @@
             <tr>
               <td><i class="fas fa-toggle-off"></i></td>
               <td>05-2016<br>01-2017</td>
-              <td><b><?php echo $klinik; ?></b><br>@ Tauernklinikum, Zell am See AT</td>
+              <td><b><?php echo $klinik; ?></b><br>@ <a target="_blank" href="https://www.tauernklinikum.at/">Tauernklinikum, Zell am See AT</a></td>
               <td>
                 <div class="progress">
                   <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 10%;"></div>
@@ -363,13 +363,13 @@
             <tr>
               <td><i class="fas fa-toggle-on"></i></td>
               <td>07-2017<br>??-????</td>
-              <td><b><?php echo $loechel; ?></b><br>@ Löchel Industriebedarf, Sulingen DE</td>
+              <td><b><?php echo $loechel; ?></b><br>@ <a target="_blank" href="https://www.loechel-industriebedarf.de/">Löchel Industriebedarf, Sulingen DE</a></td>
               <td>
                 <div class="progress">
                   <div class="progress-bar-striped bg-success" role="progressbar" style="width: <?php echo calcYears("2017-07-01")*10; ?>%;"></div>
                 </div>
                 <blockquote class="text-right">
-                  <footer class="blockquote-footer"><?php echo calcYears("2017-07-01"); ?>+ <?php echo $years; ?></footer>
+                  <footer class="blockquote-footer"><?php echo calcYears("2017-07-01"); ?> <?php echo $years; ?></footer>
                 </blockquote>
               </td>
             </tr>
@@ -377,6 +377,7 @@
               <td><i class="far fa-question-circle"></i></td>
               <td>??-????<br>??-????</td>
               <td><b><?php echo $future; ?></b><br>@ <?php echo $future_info; ?></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -409,5 +410,8 @@
     $new_date = new DateTime($date);
     $today = new DateTime();
     $interval = $today->diff($new_date);
-    return $interval->format('%y');
+    $years = $interval->format('%y');
+    $months = $interval->format('%m');
+    $monthcal = intval($months/12*10);
+    return $years . '.' . $monthcal;
   }
