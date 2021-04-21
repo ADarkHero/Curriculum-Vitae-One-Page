@@ -49,11 +49,11 @@
 
 
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-<a class="navbar-brand col-md-10 col-lg-10 me-0 px-3" href="#">Maik Riedlsperger - <?php echo $cv; ?></a>
-<a class="navbar-brand col-md-2 col-lg-2 me-0 px-3 text-right" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
+<a class="navbar-brand col-sm-6 col-md-10 col-lg-10 me-0 px-3" href="#">Maik Riedlsperger - <?php echo $cv; ?></a>
+<a class="navbar-brand col-sm-2 col-md-2 col-lg-2 me-0 px-3 text-right text-center-sm" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
   EN <i class="fas fa-toggle-<?php if($currentlanguage == "en"){ echo "off"; } else { echo "on"; } ?>"></i> DE
 </a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="col-sm-4 text-right navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <?php echo $contact_info; ?>&nbsp;
     <span class="navbar-toggler-icon"></span>
   </button>

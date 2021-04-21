@@ -30,7 +30,14 @@ body{
 
 
 .text-right {
-    text-align: right!important;
+    text-align: right;
+}
+
+
+@media screen and (max-width: 768px){
+  .text-center-sm{
+    text-align: center;
+  }
 }
 
 
@@ -59,6 +66,8 @@ body{
     padding: unset;
   }
 }
+
+
 
 
 .fa, .fas, .far {
