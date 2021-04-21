@@ -46,4 +46,7 @@
     $loechel = "E-Commerce manager & data specialist";
     $future = "Great job";
     $future_info = "Great company, great working place";
+
+    //Footer
+    $print = "Print this curriculum vitae";
 ?>

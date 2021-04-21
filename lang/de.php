@@ -46,4 +46,7 @@
     $loechel = "E-Commerce Manager & Datenspezialist";
     $future = "Großartiger Job";
     $future_info = "Großartiges Unternehmen, Großartiger Standort";
+
+    //Footer
+    $print = "Lebenslauf drucken";
 ?>

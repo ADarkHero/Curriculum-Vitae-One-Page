@@ -69,17 +69,48 @@ body{
 
 
 
-
 .fa, .fas, .far {
   width: 1.5em;
   text-align: center;
 }
 
 
+
 .footer{
-  height: 5em;
+  height: 6.5em;
   background-image: url(../img/photo.jpg);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 5em;
+  background-size: 6.5em;
+}
+
+
+.container{
+  margin-left: unset;
+}
+
+
+
+/*
+* Print layout
+*/
+@media print {
+  body {
+    background-image: none;
+    -webkit-print-color-adjust: exact;
+    box-shadow: inset 0 0;
+    -webkit-box-shadow: inset 0 0;
+    overflow: visible !important;
+  }
+  .sidebar{
+    display: block!important;
+    position: relative!important;
+    padding: unset;
+    page-break-before: always;
+    page-break-after: always;
+    padding-bottom: 125px; /* Quick, dirty fix to make a beautiful 2-page layout */
+  }
+  .hide-print{
+    display: none;
+  }
 }

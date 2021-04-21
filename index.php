@@ -41,19 +41,19 @@
 
     <!-- Font Awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
+
   </head>
   <body>
     
 
 <!-- Header -->
-
-
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
 <a class="navbar-brand col-sm-6 col-md-10 col-lg-10 me-0 px-3" href="#">Maik Riedlsperger - <?php echo $cv; ?></a>
-<a class="navbar-brand col-sm-2 col-md-2 col-lg-2 me-0 px-3 text-right text-center-sm" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
+<a class="navbar-brand hide-print col-sm-2 col-md-2 col-lg-2 me-0 px-3 text-right text-center-sm" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
   EN <i class="fas fa-toggle-<?php if($currentlanguage == "en"){ echo "off"; } else { echo "on"; } ?>"></i> DE
 </a>
-  <button class="col-sm-4 text-right navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="col-sm-4 hide-print text-right navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" 
+  aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" id="menuButton">
     <?php echo $contact_info; ?>&nbsp;
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -381,26 +381,28 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
 
 
 <!-- Footer -->
+
 
 
         <footer class="footer mt-auto py-3 bg-light">
           <div class="container">
             <span class="text-muted">
               Made with ❤ (and Bootstrap & Font Awesome) by <a target="_blank" href="https://www.adarkhero.de">Maik Riedlsperger</a><br>
-              Background image by <a target="_blank" href="https://pixabay.com/de/illustrations/ananas-wassermelone-obst-kalk-2201631/">mitosue</a>
+              Background image by <a target="_blank" href="https://pixabay.com/de/illustrations/ananas-wassermelone-obst-kalk-2201631/">mitosue</a><br>
+              <button onclick="javascript:window.print();" class="btn btn-outline-primary btn-sm hide-print"><?php echo $print; ?></button>
             </span>
           </div>
         </footer>
   
-</div>
+
 
 
 <!-- JS -->
-
-
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
