@@ -1,5 +1,5 @@
 # Curriculum-Vitae-One-Page
-Features:
+## Features
 * Switch between German and English language
 * Button to print (or save as pdf) in A4
 * Automatic calculation of experience in years
