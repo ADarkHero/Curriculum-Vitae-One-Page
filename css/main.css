@@ -1,3 +1,6 @@
+/**********************************************
+*** Tags                                      *
+***********************************************/
 body{
   font-family: var(--bs-font-monospace);
 }
@@ -6,7 +9,9 @@ body{
 
 
 
-
+/**********************************************
+*** Classes                                   *
+***********************************************/
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -14,30 +19,9 @@ body{
     -moz-user-select: none;
     user-select: none;
 }
-
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
-  }
-}
-
-
-
-.navbar{
-  position: relative;
-  justify-content: revert;
-}
-
-
-
-.text-right {
-    text-align: right;
-}
-
-
-@media screen and (max-width: 768px){
-  .text-center-sm{
-    text-align: center;
   }
 }
 
@@ -50,22 +34,8 @@ body{
 
 
 
-.margin-top-revert{
-    margin-top: revert;
-}
-
-
-
-.sidebar{
-    position: absolute;
-    top: 0rem;
-    background-image: url(../img/background.jpg);
-}
-@media screen and (max-width: 768px){
-  .sidebar{
-    position: relative!important;
-    padding: unset;
-  }
+.container{
+  margin-left: unset;
 }
 
 
@@ -77,7 +47,11 @@ body{
 
 
 
-@media screen and (min-width: 768px){
+/* 
+* Photo will not be displayed on sm and xs
+* Photo will be displayed on print version
+*/
+@media print, screen and (min-width: 768px){
   .footer{
     min-height: 7.5em;
     background-image: url(../img/photo.jpg);
@@ -89,15 +63,50 @@ body{
 
 
 
-.container{
-  margin-left: unset;
+.margin-top-revert{
+  margin-top: revert;
 }
 
 
 
-/*
-* Print layout
-*/
+.navbar{
+  position: relative;
+  justify-content: revert;
+}
+
+
+
+.sidebar{
+  position: absolute;
+  top: 0rem;
+  background-image: url(../img/background.jpg);
+}
+@media screen and (max-width: 768px){
+  .sidebar{
+    position: relative!important;
+    padding: unset;
+  }
+}
+
+
+
+@media screen and (max-width: 768px){
+  .text-center-sm{
+    text-align: center;
+  }
+}
+
+
+
+.text-right {
+  text-align: right;
+}
+
+
+
+/**********************************************
+*** Print layout                              *
+***********************************************/
 @media print {
   body {
     background-image: none;
