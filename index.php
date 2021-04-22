@@ -390,7 +390,7 @@
 
 
         <footer class="footer mt-auto py-3 bg-light">
-          <div class="container">
+          <div class="container col-10">
             <span class="text-muted">
               Made with ❤ (and Bootstrap & Font Awesome) by <a target="_blank" href="https://www.adarkhero.de">Maik Riedlsperger</a><br>
               Background image by <a target="_blank" href="https://pixabay.com/de/illustrations/ananas-wassermelone-obst-kalk-2201631/">mitosue</a><br>
