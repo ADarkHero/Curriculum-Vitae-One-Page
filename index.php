@@ -228,7 +228,7 @@
 
     <main class="col-md-8 ms-sm-auto col-lg-9 px-md-4">
       <h2 class="margin-top-revert">Skills</h2>
-      <div class="table-responsive">
+      <div class="table">
         <table class="table table-striped table-md">
           <thead>
             <tr>
@@ -297,7 +297,7 @@
 
     <main class="col-md-8 ms-sm-auto col-lg-9 px-md-4">
       <h2><?php echo $w_exp; ?></h2>
-      <div class="table-responsive">
+      <div class="table">
         <table class="table table-striped table-md">
           <thead>
             <tr>
