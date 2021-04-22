@@ -24,7 +24,8 @@ body{
 
 
 .navbar{
-    justify-content: revert;
+  position: relative;
+  justify-content: revert;
 }
 
 

@@ -48,11 +48,11 @@
 
 <!-- Header -->
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-<a class="navbar-brand col-sm-6 col-md-10 col-lg-10 me-0 px-3" href="#">Maik Riedlsperger - <?php echo $cv; ?></a>
-<a class="navbar-brand hide-print col-sm-2 col-md-2 col-lg-2 me-0 px-3 text-right text-center-sm" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
+<a class="navbar-brand col-12 col-sm-6 col-md-10 col-lg-10 me-0 px-3 text-center-sm" href="#">Maik Riedlsperger - <?php echo $cv; ?></a>
+<a class="navbar-brand hide-print col-12 col-sm-2 col-md-2 col-lg-2 me-0 px-3 text-right text-center-sm" href="<?php if($currentlanguage == "en"){ echo "?lang=de"; } else { echo "?lang=en"; }?>">
   EN <i class="fas fa-toggle-<?php if($currentlanguage == "en"){ echo "off"; } else { echo "on"; } ?>"></i> DE
 </a>
-  <button class="col-sm-4 hide-print text-right navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" 
+  <button class="col-12 col-sm-4 hide-print text-right navbar-toggler d-md-none collapsed text-center-sm" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" 
   aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" id="menuButton">
     <?php echo $contact_info; ?>&nbsp;
     <span class="navbar-toggler-icon"></span>
